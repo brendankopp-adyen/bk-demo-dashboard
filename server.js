@@ -15,14 +15,22 @@ var api = new ParseServer({
 app.use('/parse', api);
 
 //PARSE DASHBOARD
-var options = { allowInsecureHTTP: false };
+var options = { 
+  allowInsecureHTTP: false, 
+  "trustProxy": 1
+};
 
 var dashboard = new ParseDashboard({
-  databaseURI: 'mongodb://bk-demo-app-db-user:dhg73-9SY18$923Xsy%dk23!@ds039125.mlab.com:39125/heroku_39dptd5q',
-  appId: 'bk-demo-app',
-  masterKey: 'bk-demo-app-dummy-master-key-xxx',
-  serverURL: 'https://bk-demo-app.herokuapp.com/parse',
-}, options);
+  "apps": [
+    {
+      "serverURL": "https://bk-demo-app.herokuapp.com/parse",
+      "appId": "bk-demo-app",
+      "masterKey": "bk-demo-app-dummy-master-key-xxx",
+      "appName": "BK Demo App"
+    }
+  ],
+  "trustProxy": 1
+});
 app.use('/dashboard', dashboard);
 
 // Serve static assets from the /public folder
