@@ -15,11 +15,7 @@ var api = new ParseServer({
 app.use('/parse', api);
 
 //PARSE DASHBOARD
-var options = { 
-  allowInsecureHTTP: false, 
-  "trustProxy": 1
-};
-
+var trustProxy = true;
 var dashboard = new ParseDashboard({
   "apps": [
     {
