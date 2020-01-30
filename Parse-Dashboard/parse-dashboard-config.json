@@ -5,9 +5,7 @@
       "appId": "bk-demo-app",
       "masterKey": "bk-demo-app-dummy-master-key",
       "appName": "BK Demo App",
-      "production": true,
-      "primaryBackgroundColor": "#FFA500", 
-      "secondaryBackgroundColor": "#FF4500"
+      "production": true
     }
   ],
   "users": [
