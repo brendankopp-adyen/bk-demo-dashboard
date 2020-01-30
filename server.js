@@ -6,7 +6,7 @@ var dashboard = new ParseDashboard({
   "apps": [
     {
       "serverURL": "https://bk-demo-app.herokuapp.com/parse",
-      "graphQLServerURL": "http://localhost:1337/graphql",
+      "graphQLServerURL": "https://bk-demo-app.herokuapp.com/graphql",
       "appId": "bk-demo-app",
       "masterKey": "bk-demo-app-dummy-master-key",
       "appName": "BK Demo App",
