@@ -22,11 +22,21 @@ var dashboard = new ParseDashboard({
       "serverURL": "https://bk-demo-app.herokuapp.com/parse",
       "appId": "bk-demo-app",
       "masterKey": "bk-demo-app-dummy-master-key-xxx",
-      "appName": "BK Demo App"
+      "appName": "BK Demo App",
+      "production": true,
+      "primaryBackgroundColor": "#FFA500", 
+      "secondaryBackgroundColor": "#FF4500"
     }
   ],
+  "users": [
+    {
+      "user":"brendan",
+      "pass":"bk-demo-app-pw"
+    }
+   ],
   "trustProxy": 1
 });
+
 app.use('/dashboard', dashboard);
 
 // Serve static assets from the /public folder
