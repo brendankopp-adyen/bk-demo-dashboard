@@ -9,9 +9,7 @@ var dashboard = new ParseDashboard({
       "appId": "bk-demo-app",
       "masterKey": "bk-demo-app-dummy-master-key",
       "appName": "BK Demo App",
-      "production": false,
-      "primaryBackgroundColor": "#FFA500", 
-      "secondaryBackgroundColor": "#FF4500"
+      "production": true
     }
   ],
   "users": [
