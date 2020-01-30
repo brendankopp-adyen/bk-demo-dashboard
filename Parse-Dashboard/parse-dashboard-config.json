@@ -1,9 +1,9 @@
 {
   "apps": [
     {
-      "serverURL": "https://bk-demo-app.herokuapp.com/parse",
+      "serverURL": "https://bk-demo-application.herokuapp.com/parse",
       "appId": "bk-demo-app",
-      "masterKey": "bk-demo-app-dummy-master-key-xxx",
+      "masterKey": "bk-demo-app-dummy-master-key",
       "appName": "BK Demo App",
       "production": true,
       "primaryBackgroundColor": "#FFA500", 
