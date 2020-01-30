@@ -5,7 +5,7 @@ var trustProxy = true;
 var dashboard = new ParseDashboard({
   "apps": [
     {
-      "serverURL": "https://bk-demo-application.herokuapp.com/parse",
+      "serverURL": "https://bk-demo-app.herokuapp.com/parse",
       "appId": "bk-demo-app",
       "masterKey": "bk-demo-app-dummy-master-key",
       "appName": "BK Demo App",
